@@ -7,32 +7,6 @@
 // #define float double
 #define BIT 31
 
-int min(int a, int b){
-    if(a < b) return a;
-    return b;
-}
-
-int max(int a, int b){
-    if(a > b) return a;
-    return b;
-}
-
-int get_len(int temp){
-    int n = temp;
-    int cnt = 1;
-    while(n >= 10){
-        n /= 10;
-        cnt++;
-    }
-    return cnt;
-}
-
-void swap(int* a, int* b){
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
 int main(){
 
     int n, k; scanf("%d %d", &n, &k);

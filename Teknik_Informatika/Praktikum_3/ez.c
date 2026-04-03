@@ -6,17 +6,6 @@
 // #define rep(i, n) for(int i = 0; i < n; i++)
 // #define float double
 
-int max(int a, int b){
-    if(a > b) return a;
-    return b;
-}
-
-void swap(int* a, int* b){
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
 int main(){
 
     int n; scanf("%d", &n);

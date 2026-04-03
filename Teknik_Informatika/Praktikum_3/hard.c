@@ -6,16 +6,6 @@
 // #define rep(i, n) for(int i = 0; i < n; i++)
 // #define float double
 
-int min(int a, int b){
-    if(a < b) return a;
-    return b;
-}
-
-int max(int a, int b){
-    if(a > b) return a;
-    return b;
-}
-
 int get_len(int temp){
     int n = temp;
     int cnt = 1;
@@ -34,9 +24,6 @@ void swap(int* a, int* b){
 
 int main(){
 
-    // printf("%d\n", get_len(9));
-    // printf("%d\n", get_len(1951));
-    // printf("%d\n", get_len(20));
     int n; scanf("%d", &n);
     int A[n];
     int i, j;
@@ -47,13 +34,8 @@ int main(){
     }
     int in; scanf("%d", &in);
     A[n-1] = in;
-    // for(i = 0; i < n; i++){
-    //     printf("%d ", A[i]);
-    // }
-    // printf("\n");
     for(i = 0; i < n-1; i++){
         for(j = 0; j < n-i-1; j++){
-            // printf("comparing A[%d] to A[%d]\n", A[j], A[j+1]);
             if(get_len(A[j]) < get_len(A[j+1])){
                 swap(&A[j], &A[j+1]);
             } else if(get_len(A[j]) > get_len(A[j+1])){
